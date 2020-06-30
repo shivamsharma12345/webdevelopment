@@ -1,0 +1,182 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 30%;  
+  padding: 10px;  
+  margin: 5px 0 15px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>  
+</head>  
+<body>  
+  <div class="container">  
+  <center>  <h1> Hospital Management System</h1> <br>  
+   <div class="dropdown">
+  <button class="dropbtn">Patient</button>
+  <div class="dropdown-content">
+     
+    <a href="C:/Users/Shubham/Pictures/case_Study/index11.html">Update Record</a>
+    <a href="C:/Users/Shubham/Pictures/case_Study/index12.html">Delete Record</a>
+	<a href="">All Patient List</a>
+	<a href=" ">View Patient</a>
+  </div>
+</div>&emsp;
+ <div class="dropdown">
+  <button class="dropbtn">Pharmacy</button>
+  <div class="dropdown-content">
+    <a href="#">Registration</a>
+    <a href="#">Update Record</a>
+    <a href="#">Delete Record</a>
+  </div>
+</div>&emsp;
+ <div class="dropdown">
+  <button class="dropbtn">Diagnostic</button>
+  <div class="dropdown-content">
+    <a href="#">Registration</a>
+    <a href="#">Update Record</a>
+    <a href="#">Delete Record</a>
+  </div>
+</div>
+</center>
+   <hr>  
+<form>  
+
+<center>
+<h2>PATIENT REGISTRATION</h2>
+<label> Patient SSN ID* </label>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+<input type="text" name="firstname" placeholder= "Patient SSN ID" size="15" required />   <br>
+<label>Patient Name *</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+<input type="text" name="firstname" placeholder= "Patient name" size="15" required />   <br>
+<label> Patient Age * </label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;   
+<input type="text" name="middlename" placeholder="Patient Age" size="15" required />   <br>
+<label> Date of Admission *  </label>&nbsp;&nbsp;&nbsp;
+<input type="text" name="lastname" placeholder="Date of Admission" size="15"required />   
+<div>  
+
+<label> Type of bed*</label> &emsp;     
+<select>  
+<option value="Bed Type">Select Type of Bed</option>  
+<option value="electric">Electric Bed</option> 
+<option value="icu">ICU Bed</option> 
+<option value="infant">Infant Bed</option>  
+<option value="plain">Plain Bed</option>  
+</select>  
+</div>  
+<div>
+<label> State*</label>&emsp;&emsp;&emsp;&emsp;
+
+<select name="state" id="state" class="form-control">
+<option value="Andhra Pradesh">Select your State</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select><br><br>
+<label>   
+Gender* :  
+</label>&emsp;&emsp;&emsp;
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+ </div>  
+<label>Current Address* :</label>&emsp; &ensp;  
+<textarea cols="10" rows="1" placeholder="Current Address" value="address" required>  
+</textarea> <br> 
+<button type="submit" class="registerbtn">Register</button>  &emsp;&emsp;&emsp;&emsp; <button type="submit" class="reset">Reset</button>  
+</form>  
+</center>
+</body>  
+</html>  
